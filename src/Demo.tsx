@@ -17,8 +17,9 @@ export default function DateRangePickerValue() {
       <DemoContainer components={["DateRangePicker", "DateRangePicker"]}>
         <DemoItem label="Uncontrolled picker" component="DateRangePicker">
           <DateRangePicker
-            startText="foo"
-            endText="bar"
+            localeText={{
+              start: "foo"
+            }}
             defaultValue={[dayjs("2022-04-17"), dayjs("2022-04-21")]}
           />
         </DemoItem>
